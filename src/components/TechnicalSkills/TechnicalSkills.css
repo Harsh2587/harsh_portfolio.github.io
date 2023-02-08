@@ -1,0 +1,95 @@
+#technicalskills h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#technicalskills h2{
+    display: flex;
+    color: #e08804;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.technicalskills-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.technicalskills-container > div {
+    background: #fff;
+    border-radius: 2rem;
+    border: 3px solid grey;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out ;
+
+}
+
+.experience-core-subjects{
+    margin-top: 10px;
+}
+
+.technicalskills-container > div:hover{
+    background: #deddda;
+    cursor: default;
+}
+
+.technicalskills-container >div h3{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    color: #7a3a3a;
+}
+
+
+
+.experience-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    padding-left: 8px;
+}
+
+.experience-details {
+    display: flex;
+    gap: 1rem;
+}
+
+.experience-react-icon {
+    color: #003087;
+
+}
+
+
+@media(min-width: 768px){
+    .technicalskills-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .experience-core-subjects{
+        margin-top: 0px;
+    }
+}
+
+@media(max-width: 280px)
+{
+    .technicalskills-container{
+        width: 112%;
+    }
+
+    .technicalskills-container >div{
+        margin-left: 0px;
+        display: flex;
+        flex-direction:column ;
+    }
+
+    .experience-details{
+        gap: 10px;
+    }
+} 
